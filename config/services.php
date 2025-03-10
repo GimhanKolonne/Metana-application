@@ -35,4 +35,22 @@ return [
         ],
     ],
 
+    
+    'google' => [
+        'sheet_id' => env('GOOGLE_SHEET_ID'),
+    ],
+
+    'webhook' => [
+        'endpoint' => env('WEBHOOK_ENDPOINT', 'https://rnd-assignment.automations-3d6.workers.dev/'),
+    ],
+
+    'mailtrap' => [
+        'username' => env('MAIL_USERNAME'),
+        'password' => env('MAIL_PASSWORD'),
+        'host' => env('MAIL_HOST', 'smtp.mailtrap.io'),
+        'port' => env('MAIL_PORT', 2525),
+        'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+],
+
+
 ];

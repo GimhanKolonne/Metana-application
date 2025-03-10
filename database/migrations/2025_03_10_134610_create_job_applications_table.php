@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('job_applications', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('cv_path');
+            $table->string('cv_url');
+            $table->json('parsed_data')->nullable();
+            $table->string('status')->default('submitted');
             $table->timestamps();
         });
     }
